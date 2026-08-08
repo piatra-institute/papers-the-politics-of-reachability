@@ -1,0 +1,9 @@
+[project]
+name = "the-politics-of-reachability-sim"
+version = "0.1.0"
+description = "An institutional landscape as a transition graph: reachability by decile under identical permissions, endogenous canalization, zero-price landscape power, substrate comparison with crisis and maintenance regimes, and the floor as risk-bearing infrastructure"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+]

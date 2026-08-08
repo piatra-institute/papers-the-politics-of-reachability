@@ -1,0 +1,1473 @@
+{
+  "constants": {
+    "deciles": 10,
+    "agents_per_decile": 100,
+    "budgets": [
+      1.0,
+      1.5,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      9.0,
+      14.0,
+      22.0,
+      40.0
+    ],
+    "ruin_reserve": 2.0,
+    "generations": 60,
+    "venture_return": 30.0,
+    "consumption_cost": 0.5,
+    "seed": 0,
+    "pathways": {
+      "venture": {
+        "cost": 7.0,
+        "risk": 0.6,
+        "permission": null,
+        "appropriable": true
+      },
+      "grant": {
+        "cost": 4.0,
+        "risk": 0.4,
+        "permission": 0.15,
+        "appropriable": false
+      },
+      "commons": {
+        "cost": 6.0,
+        "risk": 0.5,
+        "permission": null,
+        "appropriable": false
+      },
+      "coop": {
+        "cost": 7.0,
+        "risk": 0.5,
+        "permission": null,
+        "appropriable": false
+      },
+      "public": {
+        "cost": 3.0,
+        "risk": 0.3,
+        "permission": 0.1,
+        "appropriable": false
+      },
+      "open_infra": {
+        "cost": 12.0,
+        "risk": 0.5,
+        "permission": null,
+        "appropriable": false
+      }
+    }
+  },
+  "missing_valley": {
+    "permitted_paths_everyone": 6,
+    "deciles": [
+      {
+        "decile": 1,
+        "budget": 1.0,
+        "reachable_unconditional": 0,
+        "reachable_with_discretion": 0,
+        "consumption_reachable": true,
+        "paths": []
+      },
+      {
+        "decile": 2,
+        "budget": 1.5,
+        "reachable_unconditional": 0,
+        "reachable_with_discretion": 0,
+        "consumption_reachable": true,
+        "paths": []
+      },
+      {
+        "decile": 3,
+        "budget": 2.0,
+        "reachable_unconditional": 0,
+        "reachable_with_discretion": 0,
+        "consumption_reachable": true,
+        "paths": []
+      },
+      {
+        "decile": 4,
+        "budget": 3.0,
+        "reachable_unconditional": 0,
+        "reachable_with_discretion": 0,
+        "consumption_reachable": true,
+        "paths": []
+      },
+      {
+        "decile": 5,
+        "budget": 4.0,
+        "reachable_unconditional": 0,
+        "reachable_with_discretion": 0,
+        "consumption_reachable": true,
+        "paths": []
+      },
+      {
+        "decile": 6,
+        "budget": 6.0,
+        "reachable_unconditional": 0,
+        "reachable_with_discretion": 2,
+        "consumption_reachable": true,
+        "paths": [
+          "grant",
+          "public"
+        ]
+      },
+      {
+        "decile": 7,
+        "budget": 9.0,
+        "reachable_unconditional": 3,
+        "reachable_with_discretion": 2,
+        "consumption_reachable": true,
+        "paths": [
+          "venture",
+          "commons",
+          "coop",
+          "grant",
+          "public"
+        ]
+      },
+      {
+        "decile": 8,
+        "budget": 14.0,
+        "reachable_unconditional": 4,
+        "reachable_with_discretion": 2,
+        "consumption_reachable": true,
+        "paths": [
+          "venture",
+          "commons",
+          "coop",
+          "open_infra",
+          "grant",
+          "public"
+        ]
+      },
+      {
+        "decile": 9,
+        "budget": 22.0,
+        "reachable_unconditional": 4,
+        "reachable_with_discretion": 2,
+        "consumption_reachable": true,
+        "paths": [
+          "venture",
+          "commons",
+          "coop",
+          "open_infra",
+          "grant",
+          "public"
+        ]
+      },
+      {
+        "decile": 10,
+        "budget": 40.0,
+        "reachable_unconditional": 4,
+        "reachable_with_discretion": 2,
+        "consumption_reachable": true,
+        "paths": [
+          "venture",
+          "commons",
+          "coop",
+          "open_infra",
+          "grant",
+          "public"
+        ]
+      }
+    ],
+    "reach_share_by_path": {
+      "venture": 0.4,
+      "grant": 0.5,
+      "commons": 0.4,
+      "coop": 0.4,
+      "public": 0.5,
+      "open_infra": 0.3
+    },
+    "missing_valleys": [
+      "open_infra"
+    ],
+    "top_decile_reach": 6,
+    "bottom_decile_reach": 0,
+    "consumption_reachable_by_all": true
+  },
+  "canalization": {
+    "generations": 60,
+    "unbounded": {
+      "history": [
+        {
+          "generation": 1,
+          "venture_share": 0.586,
+          "entropy_bits": 1.693581,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 21,
+          "venture_cost_shift": -0.1465,
+          "rival_cost_shift": 0.10255
+        },
+        {
+          "generation": 2,
+          "venture_share": 0.59,
+          "entropy_bits": 1.585182,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -0.294,
+          "rival_cost_shift": 0.2058
+        },
+        {
+          "generation": 3,
+          "venture_share": 0.586,
+          "entropy_bits": 1.637495,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -0.4405,
+          "rival_cost_shift": 0.30835
+        },
+        {
+          "generation": 4,
+          "venture_share": 0.612,
+          "entropy_bits": 1.497257,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -0.5935,
+          "rival_cost_shift": 0.41545
+        },
+        {
+          "generation": 5,
+          "venture_share": 0.63,
+          "entropy_bits": 1.405729,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -0.751,
+          "rival_cost_shift": 0.5257
+        },
+        {
+          "generation": 6,
+          "venture_share": 0.676,
+          "entropy_bits": 1.2787,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -0.92,
+          "rival_cost_shift": 0.644
+        },
+        {
+          "generation": 7,
+          "venture_share": 0.62,
+          "entropy_bits": 1.467008,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -1.075,
+          "rival_cost_shift": 0.7525
+        },
+        {
+          "generation": 8,
+          "venture_share": 0.648,
+          "entropy_bits": 1.364092,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -1.237,
+          "rival_cost_shift": 0.8659
+        },
+        {
+          "generation": 9,
+          "venture_share": 0.672,
+          "entropy_bits": 1.248175,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -1.405,
+          "rival_cost_shift": 0.9835
+        },
+        {
+          "generation": 10,
+          "venture_share": 0.674,
+          "entropy_bits": 1.271291,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -1.5735,
+          "rival_cost_shift": 1.10145
+        },
+        {
+          "generation": 11,
+          "venture_share": 0.71,
+          "entropy_bits": 1.149893,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 17,
+          "venture_cost_shift": -1.751,
+          "rival_cost_shift": 1.2257
+        },
+        {
+          "generation": 12,
+          "venture_share": 0.692,
+          "entropy_bits": 1.189303,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 17,
+          "venture_cost_shift": -1.924,
+          "rival_cost_shift": 1.3468
+        },
+        {
+          "generation": 13,
+          "venture_share": 0.706,
+          "entropy_bits": 1.133417,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 17,
+          "venture_cost_shift": -2.1005,
+          "rival_cost_shift": 1.47035
+        },
+        {
+          "generation": 14,
+          "venture_share": 0.698,
+          "entropy_bits": 1.101196,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 17,
+          "venture_cost_shift": -2.275,
+          "rival_cost_shift": 1.5925
+        },
+        {
+          "generation": 15,
+          "venture_share": 0.72,
+          "entropy_bits": 1.088011,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 17,
+          "venture_cost_shift": -2.455,
+          "rival_cost_shift": 1.7185
+        },
+        {
+          "generation": 16,
+          "venture_share": 0.748,
+          "entropy_bits": 0.971911,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 17,
+          "venture_cost_shift": -2.642,
+          "rival_cost_shift": 1.8494
+        },
+        {
+          "generation": 17,
+          "venture_share": 0.746,
+          "entropy_bits": 0.976884,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 17,
+          "venture_cost_shift": -2.8285,
+          "rival_cost_shift": 1.97995
+        },
+        {
+          "generation": 18,
+          "venture_share": 0.752,
+          "entropy_bits": 0.958396,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 17,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 2.11155
+        },
+        {
+          "generation": 19,
+          "venture_share": 0.942,
+          "entropy_bits": 0.412898,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 17,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 2.2764
+        },
+        {
+          "generation": 20,
+          "venture_share": 0.95,
+          "entropy_bits": 0.354363,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 17,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 2.44265
+        },
+        {
+          "generation": 21,
+          "venture_share": 0.946,
+          "entropy_bits": 0.373665,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 17,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 2.6082
+        },
+        {
+          "generation": 22,
+          "venture_share": 0.944,
+          "entropy_bits": 0.387255,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 17,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 2.7734
+        },
+        {
+          "generation": 23,
+          "venture_share": 0.936,
+          "entropy_bits": 0.423677,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 17,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 2.9372
+        },
+        {
+          "generation": 24,
+          "venture_share": 0.942,
+          "entropy_bits": 0.376204,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 17,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 3.10205
+        },
+        {
+          "generation": 25,
+          "venture_share": 0.954,
+          "entropy_bits": 0.312033,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 16,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 3.269
+        },
+        {
+          "generation": 26,
+          "venture_share": 0.962,
+          "entropy_bits": 0.267236,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 16,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 3.43735
+        },
+        {
+          "generation": 27,
+          "venture_share": 0.954,
+          "entropy_bits": 0.329013,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 16,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 3.6043
+        },
+        {
+          "generation": 28,
+          "venture_share": 0.966,
+          "entropy_bits": 0.243786,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 16,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 3.77335
+        },
+        {
+          "generation": 29,
+          "venture_share": 0.948,
+          "entropy_bits": 0.338531,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 16,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 3.93925
+        },
+        {
+          "generation": 30,
+          "venture_share": 0.95,
+          "entropy_bits": 0.344324,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 16,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 4.1055
+        },
+        {
+          "generation": 31,
+          "venture_share": 0.932,
+          "entropy_bits": 0.42417,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 16,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 4.2686
+        },
+        {
+          "generation": 32,
+          "venture_share": 0.942,
+          "entropy_bits": 0.389037,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 16,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 4.43345
+        },
+        {
+          "generation": 33,
+          "venture_share": 0.96,
+          "entropy_bits": 0.274743,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 16,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 4.60145
+        },
+        {
+          "generation": 34,
+          "venture_share": 0.946,
+          "entropy_bits": 0.363883,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 16,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 4.767
+        },
+        {
+          "generation": 35,
+          "venture_share": 0.946,
+          "entropy_bits": 0.350494,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 16,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 4.93255
+        },
+        {
+          "generation": 36,
+          "venture_share": 0.952,
+          "entropy_bits": 0.313277,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 16,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 5.09915
+        },
+        {
+          "generation": 37,
+          "venture_share": 0.948,
+          "entropy_bits": 0.341138,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 15,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 5.26505
+        },
+        {
+          "generation": 38,
+          "venture_share": 0.966,
+          "entropy_bits": 0.236929,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 15,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 5.4341
+        },
+        {
+          "generation": 39,
+          "venture_share": 0.95,
+          "entropy_bits": 0.329169,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 15,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 5.60035
+        },
+        {
+          "generation": 40,
+          "venture_share": 0.952,
+          "entropy_bits": 0.313277,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 15,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 5.76695
+        },
+        {
+          "generation": 41,
+          "venture_share": 0.96,
+          "entropy_bits": 0.272196,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 15,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 5.93495
+        },
+        {
+          "generation": 42,
+          "venture_share": 0.956,
+          "entropy_bits": 0.290438,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 15,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 6.10225
+        },
+        {
+          "generation": 43,
+          "venture_share": 0.964,
+          "entropy_bits": 0.251153,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 14,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 6.27095
+        },
+        {
+          "generation": 44,
+          "venture_share": 0.956,
+          "entropy_bits": 0.300046,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 14,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 6.43825
+        },
+        {
+          "generation": 45,
+          "venture_share": 0.958,
+          "entropy_bits": 0.276238,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 14,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 6.6059
+        },
+        {
+          "generation": 46,
+          "venture_share": 0.954,
+          "entropy_bits": 0.309937,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 14,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 6.77285
+        },
+        {
+          "generation": 47,
+          "venture_share": 0.954,
+          "entropy_bits": 0.303903,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 14,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 6.9398
+        },
+        {
+          "generation": 48,
+          "venture_share": 0.96,
+          "entropy_bits": 0.242292,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 14,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 7.1078
+        },
+        {
+          "generation": 49,
+          "venture_share": 0.946,
+          "entropy_bits": 0.35274,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 14,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 7.27335
+        },
+        {
+          "generation": 50,
+          "venture_share": 0.954,
+          "entropy_bits": 0.307246,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 14,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 7.4403
+        },
+        {
+          "generation": 51,
+          "venture_share": 0.97,
+          "entropy_bits": 0.219491,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 14,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 7.61005
+        },
+        {
+          "generation": 52,
+          "venture_share": 0.954,
+          "entropy_bits": 0.307246,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 14,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 7.777
+        },
+        {
+          "generation": 53,
+          "venture_share": 0.956,
+          "entropy_bits": 0.300046,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 14,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 7.9443
+        },
+        {
+          "generation": 54,
+          "venture_share": 0.96,
+          "entropy_bits": 0.253748,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 14,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 8.1123
+        },
+        {
+          "generation": 55,
+          "venture_share": 0.972,
+          "entropy_bits": 0.194655,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 12,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 8.2824
+        },
+        {
+          "generation": 56,
+          "venture_share": 0.948,
+          "entropy_bits": 0.331559,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 12,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 8.4483
+        },
+        {
+          "generation": 57,
+          "venture_share": 0.958,
+          "entropy_bits": 0.270444,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 12,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 8.61595
+        },
+        {
+          "generation": 58,
+          "venture_share": 0.946,
+          "entropy_bits": 0.35274,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 12,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 8.7815
+        },
+        {
+          "generation": 59,
+          "venture_share": 0.938,
+          "entropy_bits": 0.356731,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 12,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 8.94565
+        },
+        {
+          "generation": 60,
+          "venture_share": 0.97,
+          "entropy_bits": 0.211387,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 12,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 9.1154
+        }
+      ],
+      "entropy_first": 1.693581,
+      "entropy_last": 0.211387,
+      "venture_share_first": 0.586,
+      "venture_share_last": 0.97,
+      "venture_deciles_first": 4,
+      "venture_deciles_last": 5,
+      "rival_reach_first": 21,
+      "rival_reach_last": 12
+    },
+    "bounded": {
+      "history": [
+        {
+          "generation": 1,
+          "venture_share": 0.586,
+          "entropy_bits": 1.693581,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 21,
+          "venture_cost_shift": -0.1465,
+          "rival_cost_shift": 0.10255
+        },
+        {
+          "generation": 2,
+          "venture_share": 0.59,
+          "entropy_bits": 1.585182,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -0.294,
+          "rival_cost_shift": 0.2058
+        },
+        {
+          "generation": 3,
+          "venture_share": 0.586,
+          "entropy_bits": 1.637495,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -0.4405,
+          "rival_cost_shift": 0.30835
+        },
+        {
+          "generation": 4,
+          "venture_share": 0.612,
+          "entropy_bits": 1.497257,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -0.5935,
+          "rival_cost_shift": 0.41545
+        },
+        {
+          "generation": 5,
+          "venture_share": 0.63,
+          "entropy_bits": 1.405729,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -0.751,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 6,
+          "venture_share": 0.676,
+          "entropy_bits": 1.2787,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -0.92,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 7,
+          "venture_share": 0.62,
+          "entropy_bits": 1.467008,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -1.075,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 8,
+          "venture_share": 0.64,
+          "entropy_bits": 1.398151,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -1.235,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 9,
+          "venture_share": 0.672,
+          "entropy_bits": 1.254922,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -1.403,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 10,
+          "venture_share": 0.67,
+          "entropy_bits": 1.290064,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -1.5705,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 11,
+          "venture_share": 0.692,
+          "entropy_bits": 1.189325,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -1.7435,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 12,
+          "venture_share": 0.7,
+          "entropy_bits": 1.221358,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -1.9185,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 13,
+          "venture_share": 0.69,
+          "entropy_bits": 1.235098,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -2.091,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 14,
+          "venture_share": 0.71,
+          "entropy_bits": 1.148445,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -2.2685,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 15,
+          "venture_share": 0.724,
+          "entropy_bits": 1.088367,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -2.4495,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 16,
+          "venture_share": 0.72,
+          "entropy_bits": 1.107991,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -2.6295,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 17,
+          "venture_share": 0.712,
+          "entropy_bits": 1.180477,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -2.8075,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 18,
+          "venture_share": 0.714,
+          "entropy_bits": 1.157096,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -2.986,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 19,
+          "venture_share": 0.736,
+          "entropy_bits": 1.042024,
+          "deciles_reaching_venture": 4,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 20,
+          "venture_share": 0.932,
+          "entropy_bits": 0.477415,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 21,
+          "venture_share": 0.932,
+          "entropy_bits": 0.481285,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 22,
+          "venture_share": 0.922,
+          "entropy_bits": 0.534763,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 23,
+          "venture_share": 0.94,
+          "entropy_bits": 0.418891,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 24,
+          "venture_share": 0.924,
+          "entropy_bits": 0.506826,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 25,
+          "venture_share": 0.926,
+          "entropy_bits": 0.512918,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 26,
+          "venture_share": 0.928,
+          "entropy_bits": 0.508024,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 27,
+          "venture_share": 0.942,
+          "entropy_bits": 0.420051,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 28,
+          "venture_share": 0.936,
+          "entropy_bits": 0.460447,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 29,
+          "venture_share": 0.93,
+          "entropy_bits": 0.490723,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 30,
+          "venture_share": 0.936,
+          "entropy_bits": 0.458645,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 31,
+          "venture_share": 0.938,
+          "entropy_bits": 0.443939,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 32,
+          "venture_share": 0.918,
+          "entropy_bits": 0.558019,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 33,
+          "venture_share": 0.938,
+          "entropy_bits": 0.448668,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 34,
+          "venture_share": 0.928,
+          "entropy_bits": 0.484042,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 35,
+          "venture_share": 0.934,
+          "entropy_bits": 0.4605,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 36,
+          "venture_share": 0.942,
+          "entropy_bits": 0.432051,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 37,
+          "venture_share": 0.92,
+          "entropy_bits": 0.528887,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 38,
+          "venture_share": 0.942,
+          "entropy_bits": 0.419368,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 39,
+          "venture_share": 0.948,
+          "entropy_bits": 0.371825,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 40,
+          "venture_share": 0.91,
+          "entropy_bits": 0.594629,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 41,
+          "venture_share": 0.93,
+          "entropy_bits": 0.497352,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 42,
+          "venture_share": 0.92,
+          "entropy_bits": 0.540748,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 43,
+          "venture_share": 0.942,
+          "entropy_bits": 0.409005,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 44,
+          "venture_share": 0.924,
+          "entropy_bits": 0.524537,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 45,
+          "venture_share": 0.938,
+          "entropy_bits": 0.43567,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 46,
+          "venture_share": 0.93,
+          "entropy_bits": 0.468793,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 47,
+          "venture_share": 0.926,
+          "entropy_bits": 0.51093,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 48,
+          "venture_share": 0.922,
+          "entropy_bits": 0.51575,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 49,
+          "venture_share": 0.936,
+          "entropy_bits": 0.458804,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 50,
+          "venture_share": 0.942,
+          "entropy_bits": 0.404991,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 51,
+          "venture_share": 0.92,
+          "entropy_bits": 0.52246,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 52,
+          "venture_share": 0.93,
+          "entropy_bits": 0.484542,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 53,
+          "venture_share": 0.92,
+          "entropy_bits": 0.543385,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 54,
+          "venture_share": 0.942,
+          "entropy_bits": 0.418567,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 55,
+          "venture_share": 0.91,
+          "entropy_bits": 0.600003,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 56,
+          "venture_share": 0.942,
+          "entropy_bits": 0.421101,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 57,
+          "venture_share": 0.93,
+          "entropy_bits": 0.496626,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 58,
+          "venture_share": 0.94,
+          "entropy_bits": 0.427593,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 59,
+          "venture_share": 0.94,
+          "entropy_bits": 0.430761,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        },
+        {
+          "generation": 60,
+          "venture_share": 0.914,
+          "entropy_bits": 0.559248,
+          "deciles_reaching_venture": 5,
+          "rival_pathway_deciles": 18,
+          "venture_cost_shift": -3.0,
+          "rival_cost_shift": 0.5
+        }
+      ],
+      "entropy_last": 0.559248,
+      "venture_share_last": 0.914,
+      "rival_reach_last": 18
+    },
+    "entropy_drop_unbounded": 1.482194,
+    "note": "no permission or law changes across the run; the landscape moves only through the pool's operations on costs"
+  },
+  "zero_price": {
+    "consumption_cost_before": 0.5,
+    "consumption_cost_after": 0.5,
+    "reach_by_decile_before": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      5,
+      6,
+      6,
+      6
+    ],
+    "reach_by_decile_after": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      2,
+      3,
+      5,
+      5
+    ],
+    "deciles_losing_reach": 5,
+    "top_decile_change": -1,
+    "note": "every consumption price identical before and after; the harm is entirely outside the price column"
+  },
+  "substrates": {
+    "flat": {
+      "population_reach": 19,
+      "paths_in_world": 6,
+      "crisis_reach": 19,
+      "crisis_retention": 1.0
+    },
+    "open": {
+      "population_reach": 49,
+      "paths_in_world": 10,
+      "crisis_reach": 49,
+      "crisis_retention": 1.0
+    },
+    "enclosed": {
+      "population_reach": 45,
+      "paths_in_world": 10,
+      "crisis_reach": 25,
+      "crisis_retention": 0.555556
+    },
+    "substrate_routing_share": {
+      "open": 0.971667,
+      "enclosed": 0.9
+    },
+    "maintenance_grid": [
+      {
+        "maintenance": 0.0,
+        "open_reach": 41,
+        "enclosed_reach": 45,
+        "open_wins": false,
+        "tie": false
+      },
+      {
+        "maintenance": 0.25,
+        "open_reach": 45,
+        "enclosed_reach": 45,
+        "open_wins": false,
+        "tie": true
+      },
+      {
+        "maintenance": 0.5,
+        "open_reach": 45,
+        "enclosed_reach": 45,
+        "open_wins": false,
+        "tie": true
+      },
+      {
+        "maintenance": 0.75,
+        "open_reach": 45,
+        "enclosed_reach": 45,
+        "open_wins": false,
+        "tie": true
+      },
+      {
+        "maintenance": 1.0,
+        "open_reach": 49,
+        "enclosed_reach": 45,
+        "open_wins": true,
+        "tie": false
+      }
+    ],
+    "enclosed_strictly_wins_at": [
+      0.0
+    ],
+    "ties_at": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "open_strictly_wins_at": [
+      1.0
+    ]
+  },
+  "floor": {
+    "deciles": [
+      {
+        "decile": 1,
+        "reach_without_floor": 0,
+        "reach_with_floor": 0
+      },
+      {
+        "decile": 2,
+        "reach_without_floor": 0,
+        "reach_with_floor": 0
+      },
+      {
+        "decile": 3,
+        "reach_without_floor": 0,
+        "reach_with_floor": 0
+      },
+      {
+        "decile": 4,
+        "reach_without_floor": 0,
+        "reach_with_floor": 1
+      },
+      {
+        "decile": 5,
+        "reach_without_floor": 0,
+        "reach_with_floor": 2
+      },
+      {
+        "decile": 6,
+        "reach_without_floor": 2,
+        "reach_with_floor": 3
+      },
+      {
+        "decile": 7,
+        "reach_without_floor": 5,
+        "reach_with_floor": 5
+      },
+      {
+        "decile": 8,
+        "reach_without_floor": 6,
+        "reach_with_floor": 6
+      },
+      {
+        "decile": 9,
+        "reach_without_floor": 6,
+        "reach_with_floor": 6
+      },
+      {
+        "decile": 10,
+        "reach_without_floor": 6,
+        "reach_with_floor": 6
+      }
+    ],
+    "deciles_with_any_path_without_floor": 5,
+    "deciles_with_any_path_with_floor": 7,
+    "flat_world_deciles_without_floor": 4,
+    "flat_world_deciles_with_floor": 5,
+    "floor_gain_normal_world": 2,
+    "floor_gain_flat_world": 1
+  },
+  "checks": {
+    "permissions_identical_reach_unequal": true,
+    "missing_valley_exists": true,
+    "canalization_endogenous": true,
+    "canal_is_enabling": true,
+    "diversity_dies_as_reach_holds": true,
+    "bounded_power_preserves_alternatives": true,
+    "cap_does_not_stop_share_concentration": true,
+    "zero_price_harm": true,
+    "open_beats_enclosed_beats_flat": true,
+    "both_substrates_canalize": true,
+    "crisis_separates_forkable": true,
+    "enclosed_wins_when_unmaintained": true,
+    "floor_moves_experimentation_down": true,
+    "floors_need_valleys": true
+  }
+}
