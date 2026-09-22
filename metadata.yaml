@@ -1,14 +1,32 @@
 slug: the-politics-of-reachability
 web_slug: the-politics-of-reachability
-title: "The Politics of Reachability: Institutional Landscapes and the Distribution of Agency"
-header: "The Politics of Reachability"
-created: "2026-08"        # inception month (drives YYYY/MM archive path)
-date: "August 2026"           # publication month, e.g. "May 2026" (shown on web)
+title: 'The Politics of Reachability: Institutional Landscapes and the Distribution of Agency'
+header: The Politics of Reachability
+created: 2026-08
+date: August 2026
 paper_dir: paper
 has_simulation: true
-claims_target: results.json   # results.json | claim-ledger | none
+claims_target: results.json
 repo: git@github.com:piatra-institute/papers-the-politics-of-reachability.git
 github: https://github.com/piatra-institute/papers-the-politics-of-reachability
-status: published             # draft | built | published
-abstract: |-
-  Political theory measures freedom by non-interference, by resources, or by substantive opportunity. A prior fact escapes all three: institutions construct the paths through which intentions become consequential action, and those paths, their costs, their risks, and their gatekeepers are objects of power in their own right. This paper develops an account of freedom as reachability, the set of consequential states an agent can actually attain from its position through existing institutional pathways within its budget of money, time, risk, and permission, and it builds the account's core objects in a simulation where they can be computed. In a landscape of 6 pathways permitted identically to every agent, with a cheap consumption state reachable by all so that option-counting sees no problem anywhere, the reachable set runs from 6 pathways for the top budget decile to 0 for the bottom five, and the pathway modeled on open foundational infrastructure, permitted to everyone, is reachable by 3 deciles of 10: the missing valley is an object, and it is missing for almost everyone. Fed back on itself, the landscape narrows endogenously: returns from the one appropriable pathway deepen it and silt its alternatives, and over 60 generations the entropy of chosen pathways falls from 1.69 bits to 0.21 with no change in law, while the deepening canal genuinely admits more deciles than it began with. Capping what returns may do to rival pathways preserves the reachability of alternatives and leaves the canal's share concentrated anyway; the cap protects the exit, never the market share. An incumbent spending returns on ridge-raising and office-capture shrinks the reachable sets of 5 deciles while every consumer price in the model stays fixed, which is what an option-space conception of competition sees and a price conception cannot. A shared substrate raises reach wherever it exists, and both substrates canalize, routing over 0.9 of attempts through themselves; the open one leaves the larger field, 49 pathway-deciles against 45, and survives its steward's failure with 1.0 of its reach where the enclosed platform retains 0.56; the enclosed substrate wins in one regime, the world where nobody funds maintenance, because the gatekeeper at least pays the maintainers. A floor under failure moves the capacity to attempt anything consequential from 5 deciles to 7; the same floor in a flat world moves it from 4 to 5, because floors need valleys. The politics that follows has two tasks that must be performed together: bound any actor's unilateral power over the landscape, and build the plural, generative, forkable pathways through which ordinary reach expands. The opposite of domination is a landscape nobody can privately freeze and everyone has some effective capacity to reshape.
+status: published
+abstract: 'Theories of freedom based on non-interference, resources or substantive opportunity do not
+  capture the fact that institutions construct the paths by which intentions become consequential action,
+  and that these paths, with their costs, risks and gatekeepers, are objects of power. We define freedom
+  as reachability, the set of consequential states an agent can attain from its position through existing
+  institutional pathways within its budget of money, time, risk and permission and compute it in a simulation.
+  In a landscape of 6 pathways permitted to every agent, with a cheap consumption state reachable by all,
+  the top budget decile reaches 6 pathways and the bottom five reach none, and the pathway modelled on
+  open foundational infrastructure is reachable by 3 deciles of 10. When returns feed back on the landscape,
+  the one appropriable pathway deepens and its alternatives silt: over 60 generations the entropy of chosen
+  pathways falls from 1.69 bits to 0.21 with no change in law. Capping what returns may do to rival pathways
+  preserves their reachability (18 pathway-deciles against 12) while the dominant pathway''s share still
+  concentrates. An incumbent spending returns on raising rivals'' costs and capturing a grant office shrinks
+  the reachable sets of 5 deciles while every consumer price stays fixed. Shared substrates raise reach
+  from 19 to 49 pathway-deciles (open) or 45 (enclosed); after the steward fails, the open substrate retains
+  all of its reach and the enclosed platform 0.56, although the platform wins when no one funds maintenance.
+  Insurance against failure raises the number of deciles able to attempt any consequential pathway from
+  5 to 7.'
+web_blurb: 'Freedom as reachability: the consequential states an agent can reach through existing institutional
+  pathways. A landscape model shows universal permission with half the population reaching nothing, price-neutral
+  landscape power, and why open substrates need funded maintenance.'

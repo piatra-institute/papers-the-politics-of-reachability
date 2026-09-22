@@ -50,7 +50,7 @@ def plot_missing_valley(res: dict, path: str) -> None:
     ax.set_xlabel("budget decile", fontsize=9)
     ax.set_ylabel("consequential pathways reachable", fontsize=9)
     ax.set_ylim(0, 7.2)
-    ax.set_title("permission is flat; reachability is not", fontsize=10, color=INK)
+    ax.set_title("permitted and reachable pathways by budget decile", fontsize=10, color=INK)
     ax.legend(frameon=False, fontsize=8, loc="upper left")
     _style(ax)
     fig.tight_layout()
@@ -70,7 +70,7 @@ def plot_canalization(res: dict, path: str) -> None:
             label="entropy, rival operations capped")
     a1.set_xlabel("generation", fontsize=9)
     a1.set_ylabel("entropy of chosen pathways (bits)", fontsize=9)
-    a1.set_title("the landscape narrows with no change in law",
+    a1.set_title("entropy of chosen pathways by generation",
                  fontsize=10, color=INK)
     a1.legend(frameon=False, fontsize=8.5, loc="upper right")
     a2.plot(g, [h["rival_pathway_deciles"] for h in hu], "-", color=RED,
@@ -79,7 +79,7 @@ def plot_canalization(res: dict, path: str) -> None:
             lw=1.8, label="rival operations capped")
     a2.set_xlabel("generation", fontsize=9)
     a2.set_ylabel("pathway-deciles reachable outside the canal", fontsize=9)
-    a2.set_title("what the cap preserves is the exit, never the share",
+    a2.set_title("reachable pathway-deciles outside the venture pathway",
                  fontsize=10, color=INK)
     a2.legend(frameon=False, fontsize=8.5, loc="lower left")
     for ax in (a1, a2):
@@ -100,7 +100,7 @@ def plot_zero_price(res: dict, path: str) -> None:
     ax.set_xticks(x)
     ax.set_xlabel("budget decile", fontsize=9)
     ax.set_ylabel("consequential pathways reachable", fontsize=9)
-    ax.set_title("every consumer price unchanged; the harm is here",
+    ax.set_title("reachable pathways by decile before and after operations",
                  fontsize=10, color=INK)
     ax.legend(frameon=False, fontsize=8.5, loc="upper left")
     _style(ax)
@@ -126,7 +126,7 @@ def plot_substrates(res: dict, path: str) -> None:
     a1.set_xticks(x)
     a1.set_xticklabels(labels, fontsize=8.5)
     a1.set_ylabel("pathway-deciles reachable", fontsize=9)
-    a1.set_title("both substrates canalize; one is forkable",
+    a1.set_title("population reach and reach after steward failure",
                  fontsize=10, color=INK)
     a1.legend(frameon=False, fontsize=8, loc="upper left")
     gridm = sb["maintenance_grid"]
@@ -137,7 +137,7 @@ def plot_substrates(res: dict, path: str) -> None:
             lw=1.8, label="enclosed substrate")
     a2.set_xlabel("public maintenance funding", fontsize=9)
     a2.set_ylabel("population reach", fontsize=9)
-    a2.set_title("the gatekeeper at least pays the maintainers",
+    a2.set_title("reach against maintenance funding",
                  fontsize=10, color=INK)
     a2.legend(frameon=False, fontsize=8.5, loc="lower right")
     for ax in (a1, a2):

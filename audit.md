@@ -2,6 +2,16 @@
 
 Dated log of editorial passes and verification runs. Newest first.
 
+## 2026-09-23 — prose revision
+
+Prose rewritten against the house standards. Headings made descriptive (Introduction, Freedom as reachability, Institutional landscapes, Open infrastructure and the venture pathway, Model design, Reachable sets and endogenous narrowing, Landscape power, Shared substrates, Insurance against failure, Design principles, Objections, Reproducibility).
+
+Corrections found during the pass:
+  - The text said that at generation 60 "18 pathway-deciles outside the canal survive under the cap, against 15 without it". results.json gives canalization.unbounded.rival_reach_last = 12; now "18 against 12".
+  - "Over 0.9 of attempts route through the substrate" was stated for both worlds; the enclosed world is exactly 0.90. Now "at least 0.9 (0.97 open, 0.90 enclosed)".
+  - The maintenance comparison is now stated as a grid of funding levels (enclosed strictly wins at 0, ties at 0.25 to 0.75, open wins at 1.0).
+results.json unchanged by the figure edits.
+
 ## 2026-08-08 — v1, first full draft to publication
 
 Scope: the entire paper, simulation, and evidence base, from the seed chat to publication.
