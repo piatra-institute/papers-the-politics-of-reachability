@@ -42,3 +42,8 @@ Every entry verified against Crossref, OpenLibrary, or the live record before ci
 - **Sovereign Tech Agency / ARIA / NGI Zero self-descriptions**: programme websites; principles derived from the model instead; DMA carries the existing-instrument point.
 - **Hirschman, Stiegler, Simondon, Wiener, Beer, Friston** (seed constellation): no distinct job the core set lacks.
 - **Shepherd (2021), *The Shape of Agency***: the title collision that motivated the final title; not needed in text.
+
+## Structured bibliography (2026-09-23)
+
+The inline reference list was migrated to references.yaml (CSL) and in-text citations to Pandoc [@id] syntax. The eleven entries with DOIs in the table above were resolved through doi.org content negotiation and checked for year, title and authors. The books without DOIs (Anderson, Berlin, Gibson, Kauffman, Mazzucato, Pistor, Polanyi, Rawls, Sen, Strange, Unger, Waddington 1957), the three articles without DOIs (Deleuze, with its JSTOR stable URL; Hayek, with its JSTOR stable URL; Zittrain) and the two institutional documents (the CERN statement, id cern1993, and the Digital Markets Act, id eu2022, renamed from the converter's european1993 and european2022) were entered by hand from the details above. The CERN Document Server now blocks automated retrieval, so the statement's date rests on the earlier fetch recorded in the table. Source claims in claims.yaml were checked against abstracts from Crossref or OpenAlex.
+The sentence on the incumbent's operations said the largest losses fell in deciles 6 to 8; results.json shows deciles 7 and 8 losing three pathways each and decile 6 losing one, as deciles 9 and 10 do, so it now reads "deciles 7 and 8".

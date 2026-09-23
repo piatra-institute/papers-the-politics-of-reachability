@@ -1,0 +1,630 @@
+schema: 1
+coverage: reviewed
+reviewed_manuscript_sha256: 6e944b07484ed1b4a0901aab7190afa2e088201e908e5a5d40083bbc4061570e
+claims:
+- id: abs-permitted
+  kind: computation
+  passage: In a landscape of 6 pathways permitted to every agent, with a cheap consumption state reachable
+    by all, the top budget decile reaches 6 pathways and the bottom five reach none, and the pathway modelled
+    on open foundational infrastructure is reachable by 3 deciles of 10.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /missing_valley/permitted_paths_everyone
+    reported: '6'
+    units: pathways permitted to every agent
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile
+    decimals: 0
+- id: abs-top
+  kind: computation
+  passage: In a landscape of 6 pathways permitted to every agent, with a cheap consumption state reachable
+    by all, the top budget decile reaches 6 pathways and the bottom five reach none, and the pathway modelled
+    on open foundational infrastructure is reachable by 3 deciles of 10.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /missing_valley/top_decile_reach
+    reported: '6'
+    units: pathways reachable by the top decile
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile
+    decimals: 0
+- id: abs-openinfra
+  kind: computation
+  passage: In a landscape of 6 pathways permitted to every agent, with a cheap consumption state reachable
+    by all, the top budget decile reaches 6 pathways and the bottom five reach none, and the pathway modelled
+    on open foundational infrastructure is reachable by 3 deciles of 10.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /missing_valley/reach_share_by_path/open_infra
+    reported: '3'
+    units: deciles of 10
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile
+    decimals: 0
+    scale: 10
+- id: abs-ent-first
+  kind: computation
+  passage: 'When returns feed back on the landscape, the one appropriable pathway deepens and its alternatives
+    silt: over 60 generations the entropy of chosen pathways falls from 1.69 bits to 0.21 with no change
+    in law.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /canalization/unbounded/entropy_first
+    reported: '1.69'
+    units: bits
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile; 60 generations, 100 agents per decile, seed 0
+    decimals: 2
+- id: abs-ent-last
+  kind: computation
+  passage: 'When returns feed back on the landscape, the one appropriable pathway deepens and its alternatives
+    silt: over 60 generations the entropy of chosen pathways falls from 1.69 bits to 0.21 with no change
+    in law.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /canalization/unbounded/entropy_last
+    reported: '0.21'
+    units: bits
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile; 60 generations, 100 agents per decile, seed 0
+    decimals: 2
+- id: abs-cap
+  kind: computation
+  passage: Capping what returns may do to rival pathways preserves their reachability (18 pathway-deciles
+    against 12) while the dominant pathway's share still concentrates.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /canalization/bounded/rival_reach_last
+    reported: '18'
+    units: pathway-deciles outside the venture pathway
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile; 60 generations, 100 agents per decile, seed 0; capped
+    decimals: 0
+- id: abs-nocap
+  kind: computation
+  passage: Capping what returns may do to rival pathways preserves their reachability (18 pathway-deciles
+    against 12) while the dominant pathway's share still concentrates.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /canalization/unbounded/rival_reach_last
+    reported: '12'
+    units: pathway-deciles outside the venture pathway
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile; 60 generations, 100 agents per decile, seed 0; uncapped
+    decimals: 0
+- id: abs-zeroprice
+  kind: computation
+  passage: An incumbent spending returns on raising rivals' costs and capturing a grant office shrinks
+    the reachable sets of 5 deciles while every consumer price stays fixed.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /zero_price/deciles_losing_reach
+    reported: '5'
+    units: deciles
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile; incumbent operations, prices fixed
+    decimals: 0
+- id: abs-flat
+  kind: computation
+  passage: Shared substrates raise reach from 19 to 49 pathway-deciles (open) or 45 (enclosed); after
+    the steward fails, the open substrate retains all of its reach and the enclosed platform 0.56, although
+    the platform wins when no one funds maintenance.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /substrates/flat/population_reach
+    reported: '19'
+    units: pathway-deciles
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile; flat world
+    decimals: 0
+- id: abs-open
+  kind: computation
+  passage: Shared substrates raise reach from 19 to 49 pathway-deciles (open) or 45 (enclosed); after
+    the steward fails, the open substrate retains all of its reach and the enclosed platform 0.56, although
+    the platform wins when no one funds maintenance.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /substrates/open/population_reach
+    reported: '49'
+    units: pathway-deciles
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile; open substrate
+    decimals: 0
+- id: abs-enclosed
+  kind: computation
+  passage: Shared substrates raise reach from 19 to 49 pathway-deciles (open) or 45 (enclosed); after
+    the steward fails, the open substrate retains all of its reach and the enclosed platform 0.56, although
+    the platform wins when no one funds maintenance.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /substrates/enclosed/population_reach
+    reported: '45'
+    units: pathway-deciles
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile; enclosed platform
+    decimals: 0
+- id: abs-retention
+  kind: computation
+  passage: Shared substrates raise reach from 19 to 49 pathway-deciles (open) or 45 (enclosed); after
+    the steward fails, the open substrate retains all of its reach and the enclosed platform 0.56, although
+    the platform wins when no one funds maintenance.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /substrates/enclosed/crisis_retention
+    reported: '0.56'
+    units: fraction of reach retained
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile; steward failure
+    decimals: 2
+- id: abs-ins-before
+  kind: computation
+  passage: Insurance against failure raises the number of deciles able to attempt any consequential pathway
+    from 5 to 7.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /floor/deciles_with_any_path_without_floor
+    reported: '5'
+    units: deciles
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile
+    decimals: 0
+- id: abs-ins-after
+  kind: computation
+  passage: Insurance against failure raises the number of deciles able to attempt any consequential pathway
+    from 5 to 7.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /floor/deciles_with_any_path_with_floor
+    reported: '7'
+    units: deciles
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile; insured
+    decimals: 0
+- id: design-deciles
+  kind: computation
+  passage: Agents differ only in budget, arranged in 10 deciles from 1.0 to 40.0, and an uninsured agent
+    must hold a ruin reserve of 2.0 against failure before attempting anything.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /constants/deciles
+    reported: '10'
+    units: deciles
+    conditions: model constant
+    decimals: 0
+- id: top-6
+  kind: computation
+  passage: The top decile reaches all 6 pathways, 4 directly and 2 through an office's discretion.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /missing_valley/top_decile_reach
+    reported: '6'
+    units: pathways
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile
+    decimals: 0
+- id: top-4
+  kind: computation
+  passage: The top decile reaches all 6 pathways, 4 directly and 2 through an office's discretion.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /missing_valley/deciles/9/reachable_unconditional
+    reported: '4'
+    units: pathways
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile
+    decimals: 0
+- id: top-2
+  kind: computation
+  passage: The top decile reaches all 6 pathways, 4 directly and 2 through an office's discretion.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /missing_valley/deciles/9/reachable_with_discretion
+    reported: '2'
+    units: pathways
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile
+    decimals: 0
+- id: ent-first
+  kind: computation
+  passage: Returns from the venture terminal deepen that pathway and silt the alternatives, and over 60
+    generations the entropy of chosen pathways falls from 1.69 bits to 0.21 while the venture share of
+    attempts rises from 0.59 to 0.97, with no statute altered and no gate closed.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /canalization/unbounded/entropy_first
+    reported: '1.69'
+    units: bits
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile; 60 generations, 100 agents per decile, seed 0
+    decimals: 2
+- id: ent-last
+  kind: computation
+  passage: Returns from the venture terminal deepen that pathway and silt the alternatives, and over 60
+    generations the entropy of chosen pathways falls from 1.69 bits to 0.21 while the venture share of
+    attempts rises from 0.59 to 0.97, with no statute altered and no gate closed.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /canalization/unbounded/entropy_last
+    reported: '0.21'
+    units: bits
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile; 60 generations, 100 agents per decile, seed 0
+    decimals: 2
+- id: share-first
+  kind: computation
+  passage: Returns from the venture terminal deepen that pathway and silt the alternatives, and over 60
+    generations the entropy of chosen pathways falls from 1.69 bits to 0.21 while the venture share of
+    attempts rises from 0.59 to 0.97, with no statute altered and no gate closed.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /canalization/unbounded/venture_share_first
+    reported: '0.59'
+    units: share of attempts
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile; 60 generations, 100 agents per decile, seed 0
+    decimals: 2
+- id: share-last
+  kind: computation
+  passage: Returns from the venture terminal deepen that pathway and silt the alternatives, and over 60
+    generations the entropy of chosen pathways falls from 1.69 bits to 0.21 while the venture share of
+    attempts rises from 0.59 to 0.97, with no statute altered and no gate closed.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /canalization/unbounded/venture_share_last
+    reported: '0.97'
+    units: share of attempts
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile; 60 generations, 100 agents per decile, seed 0
+    decimals: 2
+- id: cap-share
+  kind: computation
+  passage: Limiting what returns may do to rival pathways, while leaving improvement of one's own pathway
+    unlimited, does not prevent the venture pathway from dominating traffic; its share still exceeds 0.9
+    because it keeps improving.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /canalization/bounded/venture_share_last
+    reported: '0.9'
+    units: venture share, lower bound (0.914)
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile; 60 generations, 100 agents per decile, seed 0; capped
+    decimals: 1
+- id: rival-cap
+  kind: computation
+  passage: 'The cap preserves the reachability of the alternatives: at generation 60, 18 pathway-deciles
+    outside the venture pathway remain reachable under the cap, against 12 without it, and the uncapped
+    landscape is still silting at the end of the run.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /canalization/bounded/rival_reach_last
+    reported: '18'
+    units: pathway-deciles
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile; 60 generations, 100 agents per decile, seed 0; capped
+    decimals: 0
+- id: rival-nocap
+  kind: computation
+  passage: 'The cap preserves the reachability of the alternatives: at generation 60, 18 pathway-deciles
+    outside the venture pathway remain reachable under the cap, against 12 without it, and the uncapped
+    landscape is still silting at the end of the run.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /canalization/unbounded/rival_reach_last
+    reported: '12'
+    units: pathway-deciles
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile; 60 generations, 100 agents per decile, seed 0; uncapped
+    decimals: 0
+- id: zp-deciles
+  kind: computation
+  passage: The reachable sets of 5 deciles shrink, with the largest losses in deciles 7 and 8, while the
+    top decile loses one pathway and keeps five.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /zero_price/deciles_losing_reach
+    reported: '5'
+    units: deciles
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile
+    decimals: 0
+- id: flat
+  kind: computation
+  passage: Reach in the flat world is 19 pathway-deciles; the open substrate raises it to 49 and the enclosed
+    one to 45.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /substrates/flat/population_reach
+    reported: '19'
+    units: pathway-deciles
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile
+    decimals: 0
+- id: open
+  kind: computation
+  passage: Reach in the flat world is 19 pathway-deciles; the open substrate raises it to 49 and the enclosed
+    one to 45.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /substrates/open/population_reach
+    reported: '49'
+    units: pathway-deciles
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile
+    decimals: 0
+- id: enclosed
+  kind: computation
+  passage: Reach in the flat world is 19 pathway-deciles; the open substrate raises it to 49 and the enclosed
+    one to 45.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /substrates/enclosed/population_reach
+    reported: '45'
+    units: pathway-deciles
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile
+    decimals: 0
+- id: route-open
+  kind: computation
+  passage: Both substrates canalize, with at least 0.9 of attempts routed through substrate-based pathways
+    (0.97 in the open world and 0.90 in the enclosed one), so TCP/IP is also a canal, and canalization
+    as such does not constitute domination.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /substrates/substrate_routing_share/open
+    reported: '0.97'
+    units: share of attempts
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile
+    decimals: 2
+- id: route-enclosed
+  kind: computation
+  passage: Both substrates canalize, with at least 0.9 of attempts routed through substrate-based pathways
+    (0.97 in the open world and 0.90 in the enclosed one), so TCP/IP is also a canal, and canalization
+    as such does not constitute domination.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /substrates/substrate_routing_share/enclosed
+    reported: '0.90'
+    units: share of attempts
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile
+    decimals: 2
+- id: retention
+  kind: computation
+  passage: When the steward fails, the open world retains all of its reach because the downstream pathways
+    can be forked and survive their origin, while the enclosed world retains 0.56 because the gate fails
+    with its keeper.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /substrates/enclosed/crisis_retention
+    reported: '0.56'
+    units: fraction retained
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile
+    decimals: 2
+- id: maint-enclosed
+  kind: computation
+  passage: 'On a grid of public maintenance levels, the open substrate silts at low funding: at zero funding
+    the enclosed platform reaches 45 pathway-deciles against 41 for the open substrate, the two tie at
+    intermediate levels, and the open substrate wins only at full funding.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /substrates/maintenance_grid/0/enclosed_reach
+    reported: '45'
+    units: pathway-deciles
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile; zero maintenance
+    decimals: 0
+- id: maint-open
+  kind: computation
+  passage: 'On a grid of public maintenance levels, the open substrate silts at low funding: at zero funding
+    the enclosed platform reaches 45 pathway-deciles against 41 for the open substrate, the two tie at
+    intermediate levels, and the open substrate wins only at full funding.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /substrates/maintenance_grid/0/open_reach
+    reported: '41'
+    units: pathway-deciles
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile; zero maintenance
+    decimals: 0
+- id: ins-5
+  kind: computation
+  passage: Insurance against the failure of an attempt raises the number of deciles able to attempt any
+    consequential pathway from 5 to 7.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /floor/deciles_with_any_path_without_floor
+    reported: '5'
+    units: deciles
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile
+    decimals: 0
+- id: ins-7
+  kind: computation
+  passage: Insurance against the failure of an attempt raises the number of deciles able to attempt any
+    consequential pathway from 5 to 7.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /floor/deciles_with_any_path_with_floor
+    reported: '7'
+    units: deciles
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile; insured
+    decimals: 0
+- id: flat-ins-4
+  kind: computation
+  passage: The same insurance in the flat world raises the number from 4 deciles to 5, because there is
+    little to attempt; insurance against failure is worth what the reachable pathways make it worth.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /floor/flat_world_deciles_without_floor
+    reported: '4'
+    units: deciles
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile; flat world
+    decimals: 0
+- id: flat-ins-5
+  kind: computation
+  passage: The same insurance in the flat world raises the number from 4 deciles to 5, because there is
+    little to attempt; insurance against failure is worth what the reachable pathways make it worth.
+  evidence:
+    file: simulation/output/results.json
+    run_id: reachability
+    pointer: /floor/flat_world_deciles_with_floor
+    reported: '5'
+    units: deciles
+    conditions: six-pathway landscape, 10 budget deciles from 1.0 to 40.0, ruin reserve 2.0, every pathway
+      permitted to every decile; flat world, insured
+    decimals: 0
+- id: cerf
+  kind: source
+  passage: Packet internetworking was published as an open protocol by researchers on public contracts
+    [@cerf1974].
+  evidence:
+    citation_id: cerf1974
+    locator: Abstract
+    verified: true
+    verification_note: DOI 10.1109/tcom.1974.1092259; OpenAlex abstract presents a protocol for sharing
+      resources across packet-switching networks.
+- id: winters-page
+  kind: source
+  passage: Winters and Page showed that oligarchy is a matter of concentrated material power and coexists
+    with elections [@winters2009; @winters2011]; Anderson showed that liberal societies constrain arbitrary
+    authority everywhere except inside institutions they classify as private [@anderson2017]; Rawls conceded
+    that political liberties lose their fair value under sufficient economic inequality [@rawls1993];
+    and Robeyns argued that extreme wealth is objectionable on democratic grounds independent of desert
+    [@robeyns2019].
+  evidence:
+    citation_id: winters2009
+    locator: Abstract
+    verified: true
+    verification_note: DOI 10.1017/S1537592709991770; the abstract uses a material-based definition and
+      argues that oligarchy is not inconsistent with democracy.
+- id: def-reach
+  kind: definition
+  passage: 'We define freedom as reachability: the set of consequential states an agent can attain from
+    its position through existing pathways within its budget of money, time, risk and permission.'
+  rationale: Central stipulative definition.
+- id: def-landscape-power
+  kind: definition
+  passage: 'Landscape power is the dynamic, topological form of the same object: the capacity to alter
+    the transition structure through which other agents pursue consequential action, by creating, deleting,
+    repricing, gating or freezing pathways.'
+  rationale: Defines landscape power as the capacity to alter the transition structure.
+- id: def-landscape
+  kind: definition
+  passage: The landscape is the transition system produced by property and corporate law, finance, intellectual-property
+    rules, procurement, standards, credentialing, social insurance and infrastructure; a valley is a viable
+    organizational trajectory; a ridge is a barrier of cost, law or legibility; and an attractor is a
+    stable form toward which projects converge.
+  rationale: Maps Waddington's figure onto institutions.
+- id: asm-geometry
+  kind: assumption
+  passage: The numbers are properties of the model's geometry and make no empirical claim.
+  rationale: States the epistemic status of every model number.
+- id: asm-choice
+  kind: assumption
+  passage: The second runs 60 generations in which agents choose affordable pathways by expected value
+    and the returns of the appropriable terminal reshape the landscape, deepening the venture pathway
+    and, unless capped, raising the costs of its rivals.
+  rationale: Expected-value choice and return feedback on costs are modelling assumptions.
+- id: int-decile7
+  kind: interpretation
+  passage: The engineer of the introduction corresponds to decile 7, able to reach the venture, commons
+    and cooperative pathways but not the one pathway suited to the project, which exists in law only.
+  rationale: Decile 7 reaches venture, commons and cooperative unconditionally (results.json /missing_valley/deciles/6/paths)
+    and not open_infra.
+- id: int-openinfra-deciles
+  kind: interpretation
+  passage: The open-infrastructure pathway, permitted to all, is reachable by deciles 8 to 10.
+  rationale: results.json /missing_valley/deciles/7-9/paths include open_infra; decile 7 does not.
+- id: int-losses
+  kind: interpretation
+  passage: The reachable sets of 5 deciles shrink, with the largest losses in deciles 7 and 8, while the
+    top decile loses one pathway and keeps five.
+  rationale: 'results.json /zero_price/reach_by_decile_before and _after: deciles 7 and 8 lose 3 pathways
+    each, deciles 6, 9 and 10 lose 1; the manuscript previously said deciles 6 to 8.'
+- id: int-fifth
+  kind: interpretation
+  passage: The venture pathway becomes more accessible as it deepens, admitting a fifth decile that could
+    not afford it at the start, so the narrowing is experienced as expanding opportunity.
+  rationale: results.json /canalization/unbounded/venture_deciles_first 4 and _last 5.
+- id: int-invariants
+  kind: interpretation
+  passage: Fourteen invariants fail the run if broken, among them the uniformity of permission against
+    the steps of reach, the endogenous fall in entropy with no change in law, the cap preserving alternatives
+    while the dominant share concentrates, the price-neutral shrinkage of 5 deciles' reachable sets, the
+    canalization of both substrates, the forkable world's survival of its steward, the enclosed platform's
+    win at zero maintenance, and the dependence of insurance on available pathways.
+  rationale: Count of entries in results.json /checks (14).
+- id: int-canal
+  kind: interpretation
+  passage: Both substrates canalize, with at least 0.9 of attempts routed through substrate-based pathways
+    (0.97 in the open world and 0.90 in the enclosed one), so TCP/IP is also a canal, and canalization
+    as such does not constitute domination.
+  rationale: Both substrates canalize; the distinction is forkability.
+- id: int-classical
+  kind: interpretation
+  passage: This configuration, with no interference, universal permission and options everywhere, leaves
+    half the population unable to reach any consequential state, and the classical theories cannot register
+    it.
+  rationale: Interpretive reading of uniform permission with unequal reach.
+- id: norm-bounded
+  kind: normative
+  passage: 'The principle implemented by the model''s cap is bounded landscape power: unlimited improvement
+    of one''s own pathway, constrained operations on other people''s pathways, and no actor able to freeze
+    the terrain.'
+  rationale: Constitutional proposal derived from the cap experiment.
+- id: norm-design
+  kind: normative
+  passage: Keep the foundational layer open and let competition occur above it, the rule most strongly
+    supported by the history above and one that European interoperability obligations have begun to legislate
+    [@eu2022].
+  rationale: Design principle supported by the substrate results and the history.
+- id: norm-maintenance
+  kind: normative
+  passage: The gatekeeper funds maintenance from its tolls, so a polity that wants open foundations without
+    funding stewardship has in effect chosen the platform.
+  rationale: Policy consequence of the maintenance grid.
+runs:
+- id: reachability
+  required: true
+  record: verification/reachability.json

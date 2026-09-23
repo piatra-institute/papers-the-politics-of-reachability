@@ -1,0 +1,379 @@
+# CSL references with stable IDs; cite with Pandoc [@id] syntax.
+# Migrated from the legacy inline bibliography. Entries with a DOI were resolved through doi.org
+# content negotiation (CSL-JSON) and checked for year and title; others were matched in Crossref
+# or entered by hand. Provenance per entry is in sources.md.
+references:
+- id: anderson2017
+  type: book
+  title: 'Private Government: How Employers Rule Our Lives (and Why We Don''t Talk about It)'
+  author:
+  - family: Anderson
+    given: Elizabeth
+  publisher: Princeton University Press
+  publisher-place: Princeton
+  issued:
+    date-parts:
+    - - 2017
+- id: arthur1989
+  type: article-journal
+  title: Competing Technologies, Increasing Returns, and Lock-In by Historical Events
+  author:
+  - given: W. Brian
+    family: Arthur
+  container-title: Economic Journal
+  volume: '99'
+  issue: '394'
+  page: 116-131
+  DOI: 10.2307/2234208
+  issued:
+    date-parts:
+    - - 1989
+- id: berlin1969
+  type: book
+  title: Four Essays on Liberty
+  author:
+  - family: Berlin
+    given: Isaiah
+  publisher: Oxford University Press
+  publisher-place: Oxford
+  issued:
+    date-parts:
+    - - 1969
+- id: cerf1974
+  type: article-journal
+  title: A Protocol for Packet Network Intercommunication
+  author:
+  - given: Vinton G.
+    family: Cerf
+  - given: Robert E.
+    family: Kahn
+  container-title: IEEE Transactions on Communications
+  volume: '22'
+  issue: '5'
+  page: 637-648
+  DOI: 10.1109/tcom.1974.1092259
+  issued:
+    date-parts:
+    - - 1974
+- id: deleuze1992
+  type: article-journal
+  title: Postscript on the Societies of Control
+  author:
+  - family: Deleuze
+    given: Gilles
+  container-title: October
+  volume: '59'
+  page: 3-7
+  URL: https://www.jstor.org/stable/778828
+  issued:
+    date-parts:
+    - - 1992
+- id: cern1993
+  type: document
+  title: Statement Concerning CERN W3 Software Release into Public Domain
+  author:
+  - literal: European Organization for Nuclear Research
+  publisher: CERN
+  publisher-place: Geneva
+  note: 30 April 1993; CERN Document Server record 1164399
+  URL: https://cds.cern.ch/record/1164399
+  issued:
+    date-parts:
+    - - 1993
+      - 4
+      - 30
+- id: eu2022
+  type: article-journal
+  title: Regulation (EU) 2022/1925 on Contestable and Fair Markets in the Digital Sector (Digital Markets
+    Act)
+  author:
+  - literal: European Union
+  container-title: Official Journal of the European Union
+  volume: L 265
+  page: 1-66
+  URL: https://eur-lex.europa.eu/eli/reg/2022/1925/oj
+  issued:
+    date-parts:
+    - - 2022
+- id: gibson1979
+  type: book
+  title: The Ecological Approach to Visual Perception
+  author:
+  - family: Gibson
+    given: James J.
+  publisher: Houghton Mifflin
+  publisher-place: Boston
+  issued:
+    date-parts:
+    - - 1979
+- id: hayek1945
+  type: article-journal
+  title: The Use of Knowledge in Society
+  author:
+  - family: Hayek
+    given: F. A.
+  container-title: American Economic Review
+  volume: '35'
+  issue: '4'
+  page: 519-530
+  URL: https://www.jstor.org/stable/1809376
+  issued:
+    date-parts:
+    - - 1945
+- id: kauffman2000
+  type: book
+  title: Investigations
+  author:
+  - family: Kauffman
+    given: Stuart A.
+  publisher: Oxford University Press
+  publisher-place: New York
+  issued:
+    date-parts:
+    - - 2000
+- id: leiner2009
+  type: article-journal
+  title: A brief history of the internet
+  author:
+  - given: Barry M.
+    family: Leiner
+  - given: Vinton G.
+    family: Cerf
+  - given: David D.
+    family: Clark
+  - given: Robert E.
+    family: Kahn
+  - given: Leonard
+    family: Kleinrock
+  - given: Daniel C.
+    family: Lynch
+  - given: Jon
+    family: Postel
+  - given: Larry G.
+    family: Roberts
+  - given: Stephen
+    family: Wolff
+  container-title: ACM SIGCOMM Computer Communication Review
+  volume: '39'
+  issue: '5'
+  page: 22-31
+  DOI: 10.1145/1629607.1629613
+  issued:
+    date-parts:
+    - - 2009
+- id: mazzucato2013
+  type: book
+  title: 'The Entrepreneurial State: Debunking Public vs. Private Sector Myths'
+  author:
+  - family: Mazzucato
+    given: Mariana
+  publisher: Anthem Press
+  publisher-place: London
+  issued:
+    date-parts:
+    - - 2013
+- id: ostrom1990
+  type: book
+  title: 'Governing the Commons: The Evolution of Institutions for Collective Action'
+  author:
+  - given: Elinor
+    family: Ostrom
+  publisher: Cambridge University Press
+  DOI: 10.1017/cbo9780511807763
+  URL: http://dx.doi.org/10.1017/CBO9780511807763
+  issued:
+    date-parts:
+    - - 1990
+  publisher-place: Cambridge
+- id: ostrom2010
+  type: article-journal
+  title: 'Beyond Markets and States: Polycentric Governance of Complex Economic Systems'
+  author:
+  - given: Elinor
+    family: Ostrom
+  container-title: American Economic Review
+  volume: '100'
+  issue: '3'
+  page: 641-672
+  DOI: 10.1257/aer.100.3.641
+  issued:
+    date-parts:
+    - - 2010
+- id: pettit1999
+  type: book
+  title: 'Republicanism: A Theory of Freedom and Government'
+  author:
+  - given: Philip
+    family: Pettit
+  publisher: Oxford University Press
+  DOI: 10.1093/0198296428.001.0001
+  URL: http://dx.doi.org/10.1093/0198296428.001.0001
+  issued:
+    date-parts:
+    - - 1999
+  publisher-place: Oxford
+- id: pistor2019
+  type: book
+  title: 'The Code of Capital: How the Law Creates Wealth and Inequality'
+  author:
+  - family: Pistor
+    given: Katharina
+  publisher: Princeton University Press
+  publisher-place: Princeton
+  issued:
+    date-parts:
+    - - 2019
+- id: polanyi1944
+  type: book
+  title: 'The Great Transformation: The Political and Economic Origins of Our Time'
+  author:
+  - family: Polanyi
+    given: Karl
+  publisher: Farrar and Rinehart
+  publisher-place: New York
+  issued:
+    date-parts:
+    - - 1944
+- id: rawls1993
+  type: book
+  title: Political Liberalism
+  author:
+  - family: Rawls
+    given: John
+  publisher: Columbia University Press
+  publisher-place: New York
+  issued:
+    date-parts:
+    - - 1993
+- id: robeyns2019
+  type: article-journal
+  title: What, if Anything, is Wrong with Extreme Wealth?
+  author:
+  - given: Ingrid
+    family: Robeyns
+  container-title: Journal of Human Development and Capabilities
+  volume: '20'
+  issue: '3'
+  page: 251-266
+  DOI: 10.1080/19452829.2019.1633734
+  URL: http://dx.doi.org/10.1080/19452829.2019.1633734
+  issued:
+    date-parts:
+    - - 2019
+- id: sabel2008
+  type: article-journal
+  title: 'Learning from Difference: The New Architecture of Experimentalist Governance in the EU'
+  author:
+  - given: Charles F.
+    family: Sabel
+  - given: Jonathan
+    family: Zeitlin
+  container-title: European Law Journal
+  volume: '14'
+  issue: '3'
+  page: 271-327
+  DOI: 10.1111/j.1468-0386.2008.00415.x
+  issued:
+    date-parts:
+    - - 2008
+- id: sen1999
+  type: book
+  title: Development as Freedom
+  author:
+  - family: Sen
+    given: Amartya
+  publisher: Alfred A. Knopf
+  publisher-place: New York
+  issued:
+    date-parts:
+    - - 1999
+- id: strange1988
+  type: book
+  title: States and Markets
+  author:
+  - family: Strange
+    given: Susan
+  publisher: Pinter
+  publisher-place: London
+  issued:
+    date-parts:
+    - - 1988
+- id: unger1987
+  type: book
+  title: 'False Necessity: Anti-Necessitarian Social Theory in the Service of Radical Democracy'
+  author:
+  - family: Unger
+    given: Roberto Mangabeira
+  publisher: Cambridge University Press
+  publisher-place: Cambridge
+  issued:
+    date-parts:
+    - - 1987
+- id: waddington1942
+  type: article-journal
+  title: Canalization of Development and the Inheritance of Acquired Characters
+  author:
+  - given: C. H.
+    family: Waddington
+  container-title: Nature
+  volume: '150'
+  issue: '3811'
+  page: 563-565
+  DOI: 10.1038/150563a0
+  issued:
+    date-parts:
+    - - 1942
+- id: waddington1957
+  type: book
+  title: The Strategy of the Genes
+  author:
+  - family: Waddington
+    given: C. H.
+  publisher: Allen and Unwin
+  publisher-place: London
+  issued:
+    date-parts:
+    - - 1957
+- id: winters2011
+  type: book
+  title: Oligarchy
+  author:
+  - given: Jeffrey A.
+    family: Winters
+  publisher: Cambridge University Press
+  DOI: 10.1017/cbo9780511793806
+  URL: http://dx.doi.org/10.1017/CBO9780511793806
+  issued:
+    date-parts:
+    - - 2011
+  publisher-place: Cambridge
+- id: winters2009
+  type: article-journal
+  title: Oligarchy in the United States?
+  author:
+  - given: Jeffrey A.
+    family: Winters
+  - given: Benjamin I.
+    family: Page
+  container-title: Perspectives on Politics
+  volume: '7'
+  issue: '4'
+  page: 731-751
+  DOI: 10.1017/s1537592709991770
+  URL: http://dx.doi.org/10.1017/S1537592709991770
+  issued:
+    date-parts:
+    - - 2009
+- id: zittrain2006
+  type: article-journal
+  title: The Generative Internet
+  author:
+  - family: Zittrain
+    given: Jonathan L.
+  container-title: Harvard Law Review
+  volume: '119'
+  issue: '7'
+  page: 1974-2040
+  issued:
+    date-parts:
+    - - 2006

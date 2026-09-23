@@ -1,0 +1,265 @@
+[
+ {
+  "id": "anderson2017",
+  "families": [
+   "Anderson"
+  ],
+  "authors_text": "Anderson, E.",
+  "year": "2017",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "arthur1989",
+  "families": [
+   "Arthur"
+  ],
+  "authors_text": "Arthur, W. B.",
+  "year": "1989",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "berlin1969",
+  "families": [
+   "Berlin"
+  ],
+  "authors_text": "Berlin, I.",
+  "year": "1969",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "cerf1974",
+  "families": [
+   "Cerf",
+   "Kahn"
+  ],
+  "authors_text": "Cerf, V. G., and Kahn, R. E.",
+  "year": "1974",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "deleuze1992",
+  "families": [
+   "Deleuze"
+  ],
+  "authors_text": "Deleuze, G.",
+  "year": "1992",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "european1993",
+  "families": [
+   "European Organization for Nuclear Research"
+  ],
+  "authors_text": "European Organization for Nuclear Research",
+  "year": "1993",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "european2022",
+  "families": [
+   "European Union"
+  ],
+  "authors_text": "European Union",
+  "year": "2022",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "gibson1979",
+  "families": [
+   "Gibson"
+  ],
+  "authors_text": "Gibson, J. J.",
+  "year": "1979",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "hayek1945",
+  "families": [
+   "Hayek"
+  ],
+  "authors_text": "Hayek, F. A.",
+  "year": "1945",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "kauffman2000",
+  "families": [
+   "Kauffman"
+  ],
+  "authors_text": "Kauffman, S. A.",
+  "year": "2000",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "leiner2009",
+  "families": [
+   "Leiner",
+   "Cerf",
+   "Clark",
+   "Kahn",
+   "Kleinrock",
+   "Lynch",
+   "Postel",
+   "Roberts",
+   "Wolff"
+  ],
+  "authors_text": "Leiner, B. M., Cerf, V. G., Clark, D. D., Kahn, R. E., Kleinrock, L., Lynch, D. C., Postel, J., Roberts, L. G., and Wolff, S.",
+  "year": "2009",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "mazzucato2013",
+  "families": [
+   "Mazzucato"
+  ],
+  "authors_text": "Mazzucato, M.",
+  "year": "2013",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "ostrom1990",
+  "families": [
+   "Ostrom"
+  ],
+  "authors_text": "Ostrom, E.",
+  "year": "1990",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "ostrom2010",
+  "families": [
+   "Ostrom"
+  ],
+  "authors_text": "Ostrom, E.",
+  "year": "2010",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "pettit1999",
+  "families": [
+   "Pettit"
+  ],
+  "authors_text": "Pettit, P.",
+  "year": "1999",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "pistor2019",
+  "families": [
+   "Pistor"
+  ],
+  "authors_text": "Pistor, K.",
+  "year": "2019",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "polanyi1944",
+  "families": [
+   "Polanyi"
+  ],
+  "authors_text": "Polanyi, K.",
+  "year": "1944",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "rawls1993",
+  "families": [
+   "Rawls"
+  ],
+  "authors_text": "Rawls, J.",
+  "year": "1993",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "robeyns2019",
+  "families": [
+   "Robeyns"
+  ],
+  "authors_text": "Robeyns, I.",
+  "year": "2019",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "sabel2008",
+  "families": [
+   "Sabel",
+   "Zeitlin"
+  ],
+  "authors_text": "Sabel, C. F., and Zeitlin, J.",
+  "year": "2008",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "sen1999",
+  "families": [
+   "Sen"
+  ],
+  "authors_text": "Sen, A.",
+  "year": "1999",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "strange1988",
+  "families": [
+   "Strange"
+  ],
+  "authors_text": "Strange, S.",
+  "year": "1988",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "unger1987",
+  "families": [
+   "Unger"
+  ],
+  "authors_text": "Unger, R. M.",
+  "year": "1987",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "waddington1942",
+  "families": [
+   "Waddington"
+  ],
+  "authors_text": "Waddington, C. H.",
+  "year": "1942",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "waddington1957",
+  "families": [
+   "Waddington"
+  ],
+  "authors_text": "Waddington, C. H.",
+  "year": "1957",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "winters2011",
+  "families": [
+   "Winters"
+  ],
+  "authors_text": "Winters, J. A.",
+  "year": "2011",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "winters2009",
+  "families": [
+   "Winters",
+   "Page"
+  ],
+  "authors_text": "Winters, J. A., and Page, B. I.",
+  "year": "2009",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "zittrain2006",
+  "families": [
+   "Zittrain"
+  ],
+  "authors_text": "Zittrain, J. L.",
+  "year": "2006",
+  "status": "UNVERIFIED"
+ }
+]

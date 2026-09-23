@@ -2,6 +2,16 @@
 
 Dated log of editorial passes and verification runs. Newest first.
 
+## 2026-09-23 — structured-evidence migration
+
+Structured-evidence migration (references and claims).
+- references.yaml: 28 CSL entries. 11 resolved through doi.org content negotiation (Crossref) and checked for year, title and authors; 17 entered by hand (twelve books without DOIs, Deleuze and Hayek with JSTOR stable URLs, Zittrain, the CERN public-domain statement as cern1993 and the Digital Markets Act as eu2022). In-text citations converted to Pandoc [@id]; the legacy list replaced by the citeproc-rendered list (Chicago author-date).
+- Correction: "The reachable sets of 5 deciles shrink, with the largest losses in deciles 6 to 8" -> "in deciles 7 and 8"; results.json /zero_price shows deciles 7 and 8 losing three pathways each and decile 6 losing one, like deciles 9 and 10.
+- claims.yaml: 55 claims (38 computation, 2 source, 3 definition, 2 assumption, 7 interpretation, 3 normative). Every model number in abstract and body bound to results.json. Source claims checked against Crossref/OpenAlex abstracts (Cerf and Kahn's protocol; Winters and Page's material-power definition compatible with democracy).
+- Unverified, not bound: the CERN release date (CERN Document Server blocks automated retrieval; relies on the earlier recorded fetch); Leiner et al. on public funding and plurality (the abstract describes the paper, not its content); Robeyns on democratic grounds independent of desert (abstract gives political equality but not desert); Arthur, Ostrom 2010 and Waddington 1942 (no abstract retrieved); Zittrain, Deleuze, Hayek and the book sources (Berlin, Sen, Gibson, Pettit, Waddington 1957, Pistor, Polanyi, Kauffman, Strange, Winters 2011, Anderson, Rawls, Ostrom 1990, Mazzucato, Unger), and the DMA interoperability statement.
+- Run: reachability (uv run python run_all.py); results.json reproduced byte for byte.
+- metadata claims_target: claim-ledger.
+
 ## 2026-09-23 — prose revision
 
 Prose rewritten against the house standards. Headings made descriptive (Introduction, Freedom as reachability, Institutional landscapes, Open infrastructure and the venture pathway, Model design, Reachable sets and endogenous narrowing, Landscape power, Shared substrates, Insurance against failure, Design principles, Objections, Reproducibility).
